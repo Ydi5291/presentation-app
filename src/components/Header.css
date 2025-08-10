@@ -1,0 +1,87 @@
+header.header-flex {
+  background: url('../assets/KiImg.jpg') center left no-repeat;
+  color: #fff;
+  padding: 0.5rem 0 0.5rem 0;
+  min-height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+  margin-left: calc(-50vw + 50%);
+  left: 0;
+  animation: header-bg-move 30s linear infinite;
+  background-size: 200% 250%;
+  background-repeat: repeat-x;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+/* Afficher le burger menu uniquement sur mobile */
+.burger-menu-container {
+  display: flex;
+}
+@media (min-width: 769px) {
+  .burger-menu-container {
+    display: none;
+  }
+}
+.header-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.header-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+@keyframes header-bg-move {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+
+
+/* Navigation classique visible uniquement sur desktop */
+.header-nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header-nav {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.header-nav a:hover {
+  color: #ffd700;
+}

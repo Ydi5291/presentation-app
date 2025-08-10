@@ -1,0 +1,110 @@
+/* Container principal */
+.burger-menu-container {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Bouton burger */
+.burger-btn {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+  margin-right: 16px;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.burger-btn span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animation en croix quand open */
+.burger-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* cachée par défaut */
+  width: 200px;
+  height: 100vh;
+  background: url('../assets/River.jpg') center left no-repeat;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Liens dans le menu */
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #29a529;
+}
+
+/* Fond sombre quand le menu est ouvert */
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(82, 139, 28, 0.4);
+  z-index: 1040;
+}
+
+/* Adaptation responsive */
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none; /* cacher le bouton sur grand écran */
+  }
+  .sidebar {
+    display: none !important; /* masquer la sidebar sur desktop */
+    left: 0;
+    position: relative;
+    height: auto;
+    background: none;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
+  .sidebar.open {
+    display: none !important;
+  }
+  .sidebar-backdrop {
+    display: none;
+  }
+}
+
