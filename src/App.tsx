@@ -7,10 +7,11 @@ import Projekte from './pages/Projekte';
 import Kontakt from './pages/Kontakt';
 import Header from './components/Header';
 import Footer from './components/Footer';
+//import des images
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Header />
       <div className="main-content">
         <Routes>

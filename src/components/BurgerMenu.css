@@ -50,6 +50,7 @@
   width: 200px;
   height: 100vh;
   background: url('../assets/River.jpg') center left no-repeat;
+  object-fit: cover;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,5 @@
-
+import YDiImg from '../assets/YDi.jpg';
 import './Header.css';
-
 
 import BurgerMenu from './BurgerMenu';
 import { Link } from 'react-router-dom';
@@ -11,7 +10,7 @@ const Header = () => {
       <div className="header-profile">
         <Link to="/">
           <img
-            src={import.meta.env.BASE_URL + "assets/YDi.jpg"}
+            src={YDiImg}
             alt="Youssouf Diallo"
             className="header-photo"
             style={{ cursor: "pointer" }}
