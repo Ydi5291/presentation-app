@@ -11,7 +11,7 @@ const Header = () => {
       <div className="header-profile">
         <Link to="/">
           <img
-            src="/src/assets/YDi.jpg"
+            src={import.meta.env.BASE_URL + "assets/YDi.jpg"}
             alt="Youssouf Diallo"
             className="header-photo"
             style={{ cursor: "pointer" }}
