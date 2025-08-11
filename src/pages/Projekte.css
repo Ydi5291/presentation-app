@@ -1,7 +1,7 @@
 .projekte-container {
   max-width: 700px;
   margin: 3rem auto 0 auto;
-  background: rgba(82, 139, 28, 0.15);
+    background: linear-gradient(135deg, #2196f3 0%, #00bcd4 40%, #3f51b5 100%);
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   padding: 2.5rem 1.5rem 2rem 1.5rem;
@@ -17,9 +17,9 @@
 .projekte-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   text-align: left;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .projekte-list li {
@@ -31,16 +31,21 @@
   font-size: 1.08rem;
   color: #222;
   transition: box-shadow 0.2s;
+  position: relative;
 }
 
 .projekte-list li strong {
   color: #528b1c;
 }
 
+.projekte-btn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .projekte-btn {
   margin-top: 0.7rem;
-  background: #528b1c;
-  color: #fff;
+   background: linear-gradient(90deg, #222 60%, #528b1c 100%);
   border: none;
   border-radius: 8px;
   padding: 0.6rem 1.3rem;
@@ -54,6 +59,32 @@
 .projekte-btn:hover {
   background: #3a6614;
   transform: translateY(-2px) scale(1.04);
+}
+
+.projekte-btn-hover-text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background: #528b1c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(82,139,28,0.12);
+}
+.projekte-btn-hover-text {
+  white-space: normal; 
+  min-width: 180px;
+  max-width: 260px;
+  text-align: center;
+}
+.projekte-btn-wrapper:hover .projekte-btn-hover-text {
+  display: block;
 }
 
 @media (max-width: 600px) {

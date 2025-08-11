@@ -1,4 +1,14 @@
 /* Styles pour la page Über mich */
+.about-intro {
+  text-align: center;
+  margin-top: 2rem;
+  background: linear-gradient(90deg, hsl(93, 76%, 38%) 60%, #528b1c 100%);
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
 .about-container {
   text-align: center;
   margin-top: 3rem;
