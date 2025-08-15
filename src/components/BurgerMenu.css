@@ -99,7 +99,7 @@
 /* Adaptation responsive */
 @media (min-width: 768px) {
   .burger-btn {
-    /* display: none;  */
+    display: none; 
   }
   .sidebar {
     display: none !important; 

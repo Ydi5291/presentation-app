@@ -8,7 +8,7 @@
   padding: 0;
   text-align: center;
   color: #222;
-  background: #fff;
+  background: linear-gradient(120deg, #e0ffe7 0%, #2e5c57 50%, #351f85 100%);
 }
 
 body {
