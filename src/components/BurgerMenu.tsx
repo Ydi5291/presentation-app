@@ -15,7 +15,7 @@ const BurgerMenu = () => {
       <nav className={`sidebar${open ? ' open' : ''}`}>
         <Link to="/" onClick={() => setOpen(false)}>Start</Link>
         <Link to="/about" onClick={() => setOpen(false)}>Über mich</Link>
-        <Link to="/projekte" onClick={() => setOpen(false)}>Projekte</Link>
+        <Link to="/projekte" onClick={() => setOpen(false)}>Projekte&Tools</Link>
         <Link to="/kontakt" onClick={() => setOpen(false)}>Kontakt</Link>
       </nav>
       {open && <div className="sidebar-backdrop" onClick={() => setOpen(false)}></div>}
