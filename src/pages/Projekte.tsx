@@ -65,6 +65,20 @@ const Projekte: React.FC = () => {
               </span>
             </a>
           </li>
+          <li>
+            <strong>Weather-app</strong> – meine Wetter-App<br />
+            <a href="https://ydi5291.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
+              <span className="projekte-btn-wrapper">
+                <button className="projekte-btn">
+                  Weather-app ansehen
+                </button>
+                <span className="projekte-btn-hover-text">
+                  Schön, dass Sie mein Projekt
+                  Weather-app entdecken möchten!
+                </span>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </>
