@@ -2,9 +2,10 @@
 .about-intro {
   text-align: center;
   margin-top: 2rem;
-  background: linear-gradient(90deg, hsl(93, 76%, 38%) 60%, #528b1c 100%);
+  background: linear-gradient(90deg, hsl(90, 10%, 92%) 60%, #528b1c 100%);
   padding: 2rem 1rem;
   border-radius: 16px;
+  border: 3px solid hsl(90, 10%, 80%);
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
@@ -15,10 +16,11 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(135deg, #2196f3 0%, #00bcd4 40%, #3f51b5 100%);
+  background: linear-gradient(135deg, #b2b5b8 0%, #939ea0 40%, #3c7c4c 100%);
   border-radius: 16px;
+  border: 3px solid hsl(90, 10%, 80%);
   padding: 2rem 1rem;
-  color: #fff;
+  color: #000;
 }
 .about-text {
   font-size: 1.3rem;

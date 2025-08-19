@@ -1,8 +1,9 @@
 .projekte-container {
   max-width: 1000px;
   margin: 3rem auto 0 auto;
-  background: linear-gradient(135deg, #2196f3 0%, #00bcd4 40%, #3f51b5 100%);
+  background: linear-gradient(135deg, #b2b5b8 0%, #939ea0 40%, #3c7c4c 100%);
   border-radius: 18px;
+  border: 3px solid hsl(90, 10%, 80%);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
   padding: 2.5rem 1.5rem 2rem 1.5rem;
   text-align: center;
@@ -100,8 +101,9 @@
 .tools-list {
   max-width: 1000px;
   margin: 3rem auto 0 auto;
-  background: linear-gradient(135deg, #2196f3 0%, #00bcd4 40%, #3f51b5 100%);
+  background: linear-gradient(135deg, #b2b5b8 0%, #939ea0 40%, #3c7c4c 100%);
   border-radius: 18px;
+  border: 3px solid hsl(90, 10%, 80%);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
   padding: 2.5rem 1.5rem 2rem 1.5rem;
   text-align: center;
@@ -149,30 +151,33 @@
   transform: scale(1.15) rotate(-8deg);
   box-shadow: 0 2px 12px rgba(33, 150, 243, 0.18);
 }
+
 /* Tools Marquee */
- /* tools movement:  */
-  .tools-marquee {
-    overflow: hidden;
-    width: 100%;
-    margin: 2rem 0;
-    position: relative;
+/* tools movement:  */
+.tools-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
 
-  .marquee-track {
-    display: flex;
-    gap: 2rem;
-    animation: marquee 20s linear infinite;
-    width: max-content;
+  100% {
+    transform: translateX(-50%);
   }
+}
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 @media (max-width: 600px) {
   .tools-list {
     padding: 1rem 0.5rem 1rem 0.5rem;
@@ -187,15 +192,15 @@
   }
 
   .tools-list-items li {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 48px;
+    min-height: 48px;
     padding: 0.3rem 0.3rem;
-    flex: 1 1 25%; 
+    flex: 1 1 25%;
     box-sizing: border-box;
   }
 
   .tools-list-items img {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
 }
