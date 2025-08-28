@@ -23,6 +23,7 @@ const Header = () => {
         <Link to="/about">Über mich</Link>
         <Link to="/projekte">Projekte</Link>
         <Link to="/kontakt">Kontakt</Link>
+        <Link to="/documents">Documents</Link> 
       </nav>
       <BurgerMenu />
     </header>
