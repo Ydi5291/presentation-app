@@ -18,7 +18,7 @@ const Documents: React.FC = () => {
 
   return (
     <div className="documents-container">
-      <h2>📂 Mes documents</h2>
+      <h2>📂 Bewerbungsunterlagen</h2>
       <ul className="documents-list">
         {docs.map((doc, index) => (
           <li key={index} className="document-item">
