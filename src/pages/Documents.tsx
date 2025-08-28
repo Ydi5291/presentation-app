@@ -18,16 +18,16 @@ const Documents: React.FC = () => {
 
   return (
     <div className="documents-container">
-      <h2>📂 Bewerbungsunterlagen</h2>
+      <h2>📂 Meine Unterlagen</h2>
       <ul className="documents-list">
         {docs.map((doc, index) => (
           <li key={index} className="document-item">
-            <FileText className="icon" size={18} />
+            <FileText className="icon" size={20} />
             <a
               href={`${BASE_PATH}assets/${doc.file}`}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ marginRight: "1rem" }}
+              style={{ marginRight: "1.5rem" }}
             >
               {doc.name}
             </a>
@@ -45,8 +45,8 @@ const Documents: React.FC = () => {
         <div className="pdf-preview">
           <iframe
             src={`${BASE_PATH}assets/${selectedDoc}#toolbar=0`}
-            width="100%"
-            height="600px"
+            width="150%"
+            height="800px"
             title="Aperçu PDF"
             style={{ border: "1px solid #ccc", marginTop: "2rem" }}
           />
