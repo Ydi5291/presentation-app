@@ -4,10 +4,8 @@ import { FileText } from "lucide-react";
 
 const docs = [
   { name: "Lebenslauf", file: "Lebenslauf_Youssouf_Diallo-img.pdf" },
-  { name: "Anschreiben", file: "Anschreiben.pdf" },
   { name: "Attestation", file: "Attestation.pdf" },
   { name: "Bescheinigung", file: "Bescheinigung.pdf" },
-  { name: "IHK Arnsberg", file: "IHK Arnsberg.pdf" },
   { name: "Arbeitszeugnis", file: "Arbeitszeugnis.pdf" }
 ];
 
@@ -45,9 +43,9 @@ const Documents: React.FC = () => {
         <div className="pdf-preview">
           <iframe
             src={`${BASE_PATH}assets/${selectedDoc}#toolbar=0`}
-            width="150%"
-            height="800px"
-            title="Aperçu PDF"
+            width="175%"
+            height="700px"
+            title=" PDF ansehen"
             style={{ border: "1px solid #ccc", marginTop: "2rem" }}
           />
         </div>
