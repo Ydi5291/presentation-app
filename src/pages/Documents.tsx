@@ -43,7 +43,7 @@ const Documents: React.FC = () => {
         <div className="pdf-preview">
           <iframe
             src={`${BASE_PATH}assets/${selectedDoc}#toolbar=0`}
-            width="175%"
+            width="150%"
             height="700px"
             title=" PDF ansehen"
             style={{ border: "1px solid #ccc", marginTop: "2rem" }}
