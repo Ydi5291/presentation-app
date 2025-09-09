@@ -25,7 +25,7 @@ const Documents: React.FC = () => {
               href={`${BASE_PATH}assets/${doc.file}`}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ marginRight: "1.5rem" }}
+              className="mr-6"
             >
               {doc.name}
             </a>
@@ -43,10 +43,8 @@ const Documents: React.FC = () => {
         <div className="pdf-preview">
           <iframe
             src={`${BASE_PATH}assets/${selectedDoc}#toolbar=0`}
-            width="150%"
-            height="700px"
             title=" PDF ansehen"
-            style={{ border: "1px solid #ccc", marginTop: "2rem" }}
+            className="b-neutral mt-8"
           />
         </div>
       )}

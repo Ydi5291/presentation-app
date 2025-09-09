@@ -3,24 +3,24 @@
   text-align: center;
   margin: 3rem auto 0 auto;
   max-width: 500px;
-   background: linear-gradient(135deg, #e4e8eb 0%, #eff4f5 40%, #ecedf1 100%);
-  border-radius: 18px;
-  border: 3px solid hsl(90, 10%, 80%);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-primary-200);
+  box-shadow: var(--shadow-lg);
   padding: 2.5rem 1.5rem 2rem 1.5rem;
 }
 
 .kontakt-text {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  color: #222;
+  color: var(--color-text);
 }
 
 .kontakt-info {
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  color: #2d3a1a;
+  color: var(--color-primary);
   font-weight: 500;
 }
 
@@ -33,18 +33,23 @@
 .kontakt-form input,
 .kontakt-form textarea {
   padding: 0.7rem 1rem;
-  border: 1px solid #b6d7a8;
-  border-radius: 8px;
+  border: 1px solid var(--color-primary-200);
+  border-radius: var(--radius-sm);
   font-size: 1rem;
-  background: #f7fff7;
+  background: #ffffff;
+  color: var(--color-text);
   resize: vertical;
+}
+.kontakt-form input::placeholder,
+.kontakt-form textarea::placeholder {
+  color: #9aa3af;
 }
 
 .kontakt-form button {
-  background: #528b1c;
+  background: linear-gradient(90deg, var(--color-primary) 60%, #64b5f6 100%);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 0.8rem 0;
   font-size: 1.1rem;
   font-weight: bold;
@@ -53,5 +58,12 @@
 }
 
 .kontakt-form button:hover {
-  background: #3a6614;
+  background: var(--color-primary-600);
+}
+
+@media (max-width: 640px) {
+  .kontakt-container {
+    margin: 2rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
 }

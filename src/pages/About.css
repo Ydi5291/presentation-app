@@ -2,13 +2,18 @@
 .about-intro {
   text-align: center;
   margin-top: 2rem;
-  background: linear-gradient(90deg, hsl(90, 10%, 92%) 60%, #528b1c 100%);
+  background: var(--color-surface);
   padding: 2rem 1rem;
-  border-radius: 16px;
-  border: 3px solid hsl(90, 10%, 80%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-primary-200);
+  box-shadow: var(--shadow-sm);
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
+}
+.about-intro h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-primary);
 }
 .about-container {
   text-align: center;
@@ -16,13 +21,26 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(135deg, #b2b5b8 0%, #939ea0 40%, #3c7c4c 100%);
-  border-radius: 16px;
-  border: 3px solid hsl(90, 10%, 80%);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-primary-200);
   padding: 2rem 1rem;
-  color: #000;
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 .about-text {
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   line-height: 1.7;
+  transition: font-size 0.2s ease, transform 0.2s ease;
+}
+.about-text:hover {
+  font-size: 1.2rem;
+  transform: translateY(-1px);
+}
+.about-container,.about-text:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  columns: var(--color-primary-200);
 }
