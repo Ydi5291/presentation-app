@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './Projekte.css';
 
 // images tools import
@@ -13,6 +14,7 @@ import TSImg from '../assets/TS.jpg';
 import AngularImg from '../assets/Angular.jpg';
 
 const Projekte: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="tools-list">
@@ -80,6 +82,7 @@ const Projekte: React.FC = () => {
             </a>
           </li>
         </ul>
+        <button onClick={() => navigate("/kontakt")}>mich kontaktieren</button>
       </div>
     </>
   );
