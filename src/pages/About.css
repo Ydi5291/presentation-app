@@ -30,17 +30,14 @@
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 .about-text {
+  display: inline-block;
   font-size: 1.125rem;
   line-height: 1.7;
-  transition: font-size 0.2s ease, transform 0.2s ease;
+  transition: font-size 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .about-text:hover {
   font-size: 1.2rem;
   transform: translateY(-1px);
-}
-.about-container,.about-text:hover {
   cursor: pointer;
   box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-  columns: var(--color-primary-200);
 }
