@@ -57,6 +57,13 @@
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
+@media screen {
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 1rem 0.5rem;
+    }
+  }
+}
 .about-text {
   display: inline-block;
   font-size: 1.125rem;

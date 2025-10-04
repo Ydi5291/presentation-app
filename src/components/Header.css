@@ -17,7 +17,7 @@ header.header-flex {
   box-shadow: 0 6px 32px rgba(33, 150, 243, 0.13), 0 2px 12px rgba(0,0,0,0.07);
   flex-wrap: nowrap;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 10;
   transition: background 0.4s, box-shadow 0.3s;
 }
@@ -133,7 +133,10 @@ header.header-flex {
   }
 
   .phone-icon {
-    font-size: 1rem;
+    font-size: 0.5rem;
+  }
+  .header-name {
+    font-size: 1.2rem;
   }
 
   .header-top {
