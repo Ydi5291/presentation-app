@@ -14,10 +14,7 @@ header.header-flex {
   left: 0;
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
-  box-shadow: 0 6px 32px rgba(33, 150, 243, 0.13), 0 2px 12px rgba(0,0,0,0.07);
-  flex-wrap: nowrap;
   position: relative;
-  /* overflow: hidden; */
   z-index: 10;
   transition: background 0.4s, box-shadow 0.3s;
 }
