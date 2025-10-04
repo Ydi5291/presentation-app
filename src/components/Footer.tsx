@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import facebookImg from "../assets/facebook.png";
 import instagramImg from "../assets/instagram.jpg";
@@ -10,6 +11,13 @@ const Footer: React.FC = () => (
       <span className="footer-copyright">
         © {new Date().getFullYear()} Youssouf Diallo
       </span>
+      <div className="footer-links">
+        <Link to="/">Start</Link>
+        <Link to="/about">Über mich</Link>
+        <Link to="/projekte">Projekte</Link>
+        <Link to="/kontakt">Kontakt</Link>
+        <Link to="/documents">Documents</Link>
+      </div>
       <div className="footer-socials">
         <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <img src={facebookImg} alt="Facebook" />

@@ -11,7 +11,8 @@ import GitImg from '../assets/git.png';
 import firebaseImg from '../assets/firebase.png';
 import makeImg from '../assets/make.jpg';
 import TSImg from '../assets/TS.jpg';
-import AngularImg from '../assets/Angular.jpg';
+import wordpressImg from '../assets/wordpress.jpg';
+
 
 const Projekte: React.FC = () => {
   const navigate = useNavigate();
@@ -19,6 +20,9 @@ const Projekte: React.FC = () => {
     <>
       <div className="tools-list">
         <h2>Tools und Technologien</h2>
+        <p className="projekte-text">
+          Hier sind einige der Technologien, mit denen ich im Alltag arbeite:
+        </p>
         <div className="tools-marquee">
           <ul className="tools-list-items marquee-track">
             <li><img src={HTMLimg} alt="HTML" /></li>
@@ -29,7 +33,7 @@ const Projekte: React.FC = () => {
             <li><img src={firebaseImg} alt="Firebase" /></li>
             <li><img src={makeImg} alt="Make.com" /></li>
             <li><img src={TSImg} alt="TypeScript" /></li>
-            <li><img src={AngularImg} alt="Angular" /></li>
+            <li><img src={wordpressImg} alt="WordPress" /></li>
           </ul>
         </div>
       </div>
