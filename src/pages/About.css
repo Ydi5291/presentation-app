@@ -39,6 +39,11 @@
   margin: 0 0 0.5rem 0;
   color: var(--color-primary);
 }
+.about-intro:hover,
+.about-intro:hover > * {
+  color: #000 !important;
+  transition: color 0.2s;
+}
 .about-container {
    max-width: 1000px;
   width: 100%;

@@ -19,8 +19,8 @@
 }
 
 .start-photo {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #1976d2;
@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 700px) {
+  .start-photo {
+    width: 200px;
+    height: 280px;
+  }
   .container-intro {
     gap: 0.7rem;
   }

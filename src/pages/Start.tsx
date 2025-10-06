@@ -17,9 +17,9 @@ const Start = () => {
 
       <div className="start-container">
         <p className="start-text">
-          Ich bin ein leidenschaftlicher Frontend-Entwickler mit Fokus auf moderne Webtechnologien wie React und Firebase.<br />
-          Erfahrung in der Entwicklung benutzerfreundlicher Webanwendungen, API-Integration und Automatisierung von KI-Chatboten mit Make.com .<br />
-          Hohe Lernbereitschaft und praxisorientierte Projekte. Außerdem arbeite ich sicher mit Content-Management-Systemen wie WordPress.
+          Ich bin ein motivierter, engagierter Berufseinsteiger und leidenschaftlicher Frontend-Entwickler mit Schwerpunkt auf modernen Webtechnologien wie React und Firebase.
+          Ich bringe Erfahrung in der Umsetzung benutzerfreundlicher Webanwendungen mit, einschließlich der Integration von APIs und Schnittstellen sowie der Automatisierung intelligenter Chatbots mit Make.com.
+          Hohe Lernbereitschaft, technisches Verständnis und ein Fokus auf praxisnahe Projekte zeichnen mich aus. Zudem arbeite ich routiniert mit Content-Management-Systemen wie WordPress
         </p>
         <button onClick={() => navigate("/about")}>weiter lesen</button>
       </div>
