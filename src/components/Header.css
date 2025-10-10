@@ -1,10 +1,9 @@
 header.header-flex {
-  background: url(../assets/Programer.jpg) center/cover no-repeat;
-  min-height: 350px;
+  min-height: 100px;
   color: #fff;
   padding: 0.7rem 2.2rem 0.7rem 2.2rem;
   display: flex;
-  flex-direction: column;         /* <-- colonne */
+  flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   width: 100vw;
@@ -19,14 +18,21 @@ header.header-flex {
   transition: background 0.4s, box-shadow 0.3s;
 }
 
+header.header-flex:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  background: #2196f3;
+  cursor: pointer;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   margin-bottom: 1.5rem;
   z-index: 2;
 }
+
 .header-name {
   font-size: 1.9rem;
   font-weight: 700;
@@ -54,7 +60,7 @@ header.header-flex {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.1rem;
-  color: #00e5ff;
+  color: #000;
   font-weight: 500;
   background: rgba(0, 188, 212, 0.12);
   padding: 0.35rem 0.9rem;
@@ -87,36 +93,37 @@ header.header-flex {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin-top: auto;
-  margin-bottom: 1.2rem;
   z-index: 2;
   gap: 1.2rem;
 }
 
 .header-nav a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
   transition: color 0.2s, background 0.2s;
   background: rgba(0, 188, 212, 0.15);
-  padding: 7px 14px;
+  padding: 6px 14px;
   border-radius: 20px;
-  margin-top: 0; /* retire le margin-top ici */
+  margin-top: 0;
 }
 
 .header-nav a:hover {
-   background: linear-gradient(135deg, #00bcd4, #2196f3);
+  color: #fff;
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
   box-shadow: 0 6px 22px rgba(33, 150, 243, 0.35);
   transform: translateY(-2px);
 }
+
 .burger-menu-container {
-  display: none; 
+  display: none;
 }
 
-@media (max-width: 950px){
-  .header-nav a{
+@media (max-width: 950px) {
+  .header-nav a {
     margin-bottom: 16px;
   }
 }
@@ -137,8 +144,9 @@ header.header-flex {
   }
 
   .phone-icon {
-    font-size: 0.5rem;
+    font-size: rem;
   }
+
   .header-name {
     font-size: 1.2rem;
   }
